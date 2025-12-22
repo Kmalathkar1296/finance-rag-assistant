@@ -1,0 +1,90 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --------------------
+# Jupyter Notebook
+# --------------------
+.ipynb_checkpoints/
+
+# --------------------
+# Environment variables
+# --------------------
+.env
+
+# --------------------
+# Vector DB / Databases
+# --------------------
+chroma_db/
+chromadb/
+*.db
+
+# --------------------
+# Data files
+# --------------------
+data/raw/*.xlsx
+data/raw/*.csv
+data/processed/*.xlsx
+data/processed/*.csv
+
+# --------------------
+# Outputs / Reports
+# --------------------
+outputs/reports/*.txt
+outputs/reports/*.pdf
+outputs/exports/*.xlsx
+
+# --------------------
+# Cache / Models
+# --------------------
+.cache/
+__hf_cache__/
+
+# --------------------
+# Logs
+# --------------------
+*.log
+logs/
+
+# --------------------
+# IDE
+# --------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --------------------
+# OS
+# --------------------
+.DS_Store
+Thumbs.db
