@@ -2,7 +2,8 @@
 Finance RAG Assistant - Streamlit Web Application
 Deploy this app to Streamlit Cloud for free public access
 """
-
+import warnings
+warnings.filterwarnings('ignore')
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -10,6 +11,7 @@ import plotly.graph_objects as go
 import os
 from datetime import datetime
 
+os.environ['ANONYMIZED_TELEMETRY'] = 'False'
 # Import local modules
 from src.data_generator import FinanceDataGenerator
 from src.rag_system import FinanceRAGSystem
@@ -423,7 +425,7 @@ with tab4:
                 return 'background-color: #ffdd44'
             return ''
         
-        styled_df = df_discrepancies.style.applymap(color_severity, subset=['severity'])
+        styled_df = df_discrepancies.style.map(color_severity, subset=['severity'])
         st.dataframe(styled_df, use_container_width=True, hide_index=True)
         
         # Export option
