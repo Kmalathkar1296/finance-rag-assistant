@@ -88,3 +88,17 @@ logs/
 # --------------------
 .DS_Store
 Thumbs.db
+
+# Gradio specific
+flagged/
+gradio_cached_examples/
+
+# HuggingFace
+.huggingface/
+
+# Gradio specific
+flagged/
+gradio_cached_examples/
+
+# HuggingFace
+.huggingface/

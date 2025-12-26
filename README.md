@@ -1,73 +1,65 @@
-# Finance RAG Assistant
+---
+title: Finance RAG Assistant
+emoji: 💰
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: 4.44.1
+app_file: app.py
+pinned: false
+license: mit
+---
 
-AI-powered payment reconciliation system using LangChain, ChromaDB, and open-source embeddings.
+# 💰 Finance RAG Assistant
+
+AI-powered payment reconciliation and financial analysis system.
 
 ## Features
 
-- 🔍 Automated payment discrepancy detection
+- 🔍 Natural language queries for financial data
+- 💸 Automatic payment discrepancy detection
 - 📊 Budget variance analysis
 - 💳 Expense claims management
-- 🤖 RAG-based natural language queries
 - 📈 Comprehensive financial reporting
 
-## Quick Start
+## Live Demo
 
-
-# Clone the repository
-git clone <your-repo-url>
-cd finance-rag-assistant
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run demo
-python scripts/run_demo.py
+Visit: [https://huggingface.co/spaces/Kmalathkar12/finance-rag-assistant](https://huggingface.co/spaces/Kmalathkar12/finance-rag-assistant)
 
 ## Usage
 
-### Generate Sample Data
+1. **Setup**: Generate sample financial data
+2. **Query**: Ask questions in natural language
+3. **Analyze**: Review discrepancies and insights
+4. **Report**: Generate comprehensive reports
 
-python scripts/generate_data.py --records 100
+## Tech Stack
 
+- **LangChain 1.1.0** - RAG orchestration
+- **ChromaDB** - Vector database
+- **Gradio** - Web interface
+- **Sentence Transformers** - Embeddings
 
-### Interactive Query Mode
+## Local Development
 
-python scripts/interactive_query.py
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-### Load Your Own Data
+# Run app
+python app.py
+```
 
-from src.rag_system import FinanceRAGSystem
-import pandas as pd
+Visit http://localhost:7860
 
-# Load your Excel files
-ar_df = pd.read_excel('data/raw/accounts_receivable.xlsx')
-payments_df = pd.read_excel('data/raw/payments.xlsx')
-gl_df = pd.read_excel('data/raw/general_ledger.xlsx')
-budget_df = pd.read_excel('data/raw/budget_forecast.xlsx')
-claims_df = pd.read_excel('data/raw/expense_claims.xlsx')
+## Deployment
 
-# Initialize RAG system
-rag = FinanceRAGSystem()
-rag.load_data(ar_df, payments_df, gl_df, budget_df, claims_df)
-rag.build_vector_store()
+Deployed on HuggingFace Spaces with free tier:
+- 16GB RAM
+- Auto-scaling
+- Public access
+- No authentication required
 
-# Query
-result = rag.query("Show me all payment discrepancies")
-print(result['summary'])
+## License
 
-
-## Sample Queries
-
-- "Show me all discrepancies in payments"
-- "Which payments are overdue?"
-- "Which departments are over budget?"
-- "Show me pending expense claims"
-- "Which expense claims exceed policy limits?"
-
-## Data Sources
-
-Download real datasets from [Excelx.com](https://excelx.com/practice-data/finance-accounting/)
+MIT License
