@@ -50,16 +50,4 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Visit http://localhost:7860
 
-## Deployment
-
-Deployed on HuggingFace Spaces with free tier:
-- 16GB RAM
-- Auto-scaling
-- Public access
-- No authentication required
-
-## License
-
-MIT License
