@@ -1,6 +1,5 @@
 ---
 title: Finance RAG Assistant
-emoji: 💰
 colorFrom: blue
 colorTo: purple
 sdk: gradio
