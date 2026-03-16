@@ -8,7 +8,7 @@ app_file: app.py
 pinned: false
 ---
 
-# 💰 Finance RAG Assistant
+# Finance RAG Assistant
 
 AI-powered payment reconciliation and financial analysis system.
 
@@ -20,9 +20,6 @@ AI-powered payment reconciliation and financial analysis system.
 - 💳 Expense claims management
 - 📈 Comprehensive financial reporting
 
-## Live Demo
-
-Visit: [https://huggingface.co/spaces/Kmalathkar12/finance-rag-assistant](https://huggingface.co/spaces/Kmalathkar12/finance-rag-assistant)
 
 ## Usage
 
