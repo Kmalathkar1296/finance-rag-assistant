@@ -127,7 +127,7 @@ finance-rag-assistant/
 - Python 3.10 or higher
 - `pip` / `venv`
 
-### 1 — Clone and install
+### 1 Clone and install
 
 ```bash
 git clone https://github.com/<your-username>/finance-rag-assistant.git
@@ -139,14 +139,14 @@ source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2 — Configure environment
+### 2 Configure environment
 
 ```bash
 cp .env.example .env
 # Optional: add ANTHROPIC_API_KEY or OPENAI_API_KEY for LLM-powered responses
 ```
 
-### 3 — Run the app
+### 3 Run the app
 
 **Streamlit (recommended for local use)**
 
